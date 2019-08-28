@@ -1,4 +1,4 @@
-(function () {
+;(function () {
   const win = window
   const doc = document.documentElement
 
@@ -8,7 +8,7 @@
   // Reveal animations
   if (document.body.classList.contains('has-animations')) {
     /* global ScrollReveal */
-    const sr = window.sr = ScrollReveal()
+    const sr = (window.sr = ScrollReveal())
 
     sr.reveal('.feature', {
       duration: 600,
@@ -40,23 +40,23 @@
   }
 
   // Features title adjustment
-  const featuresSection = document.querySelector('.features')
-  const featuresTitle = featuresSection.querySelector('.section-title')
-  const firstFeature = document.querySelector('.feature-inner')
+  // const featuresSection = document.querySelector('.features')
+  // const featuresTitle = featuresSection.querySelector('.section-title')
+  // const firstFeature = document.querySelector('.feature-inner')
 
-  featuresTitlePos()
-  win.addEventListener('resize', featuresTitlePos)
+  // featuresTitlePos()
+  // win.addEventListener('resize', featuresTitlePos)
 
-  function featuresTitlePos () {
-    let featuresSectionLeft = featuresSection.querySelector('.features-inner').getBoundingClientRect().left
-    let firstFeatureLeft = firstFeature.getBoundingClientRect().left
-    let featuresTitleOffset = parseInt(firstFeatureLeft - featuresSectionLeft)
-    if (firstFeatureLeft > featuresSectionLeft) {
-      featuresTitle.style.marginLeft = `${featuresTitleOffset}px`
-    } else {
-      featuresTitle.style.marginLeft = 0
-    }
-  }
+  // function featuresTitlePos () {
+  //   let featuresSectionLeft = featuresSection.querySelector('.features-inner').getBoundingClientRect().left
+  //   let firstFeatureLeft = firstFeature.getBoundingClientRect().left
+  //   let featuresTitleOffset = parseInt(firstFeatureLeft - featuresSectionLeft)
+  //   if (firstFeatureLeft > featuresSectionLeft) {
+  //     featuresTitle.style.marginLeft = `${featuresTitleOffset}px`
+  //   } else {
+  //     featuresTitle.style.marginLeft = 0
+  //   }
+  // }
 
   // Moving objects
   const movingObjects = document.querySelectorAll('.is-moving-object')
@@ -90,24 +90,43 @@
     mouseX = e.pageX
     mouseY = e.pageY
     scrollY = win.scrollY
-    coordinateX = (winW / 2) - mouseX
-    coordinateY = (winH / 2) - (mouseY - scrollY)
+    coordinateX = winW / 2 - mouseX
+    coordinateY = winH / 2 - (mouseY - scrollY)
 
     for (let i = 0; i < object.length; i++) {
-      const translatingFactor = object[i].getAttribute('data-translating-factor') || 20
-      const rotatingFactor = object[i].getAttribute('data-rotating-factor') || 20
+      const translatingFactor =
+        object[i].getAttribute('data-translating-factor') || 20
+      const rotatingFactor =
+        object[i].getAttribute('data-rotating-factor') || 20
       const perspective = object[i].getAttribute('data-perspective') || 500
       let tranformProperty = []
 
       if (object[i].classList.contains('is-translating')) {
-        tranformProperty.push('translate(' + coordinateX / translatingFactor + 'px, ' + coordinateY / translatingFactor + 'px)')
+        tranformProperty.push(
+          'translate(' +
+            coordinateX / translatingFactor +
+            'px, ' +
+            coordinateY / translatingFactor +
+            'px)'
+        )
       }
 
       if (object[i].classList.contains('is-rotating')) {
-        tranformProperty.push('perspective(' + perspective + 'px) rotateY(' + -coordinateX / rotatingFactor + 'deg) rotateX(' + coordinateY / rotatingFactor + 'deg)')
+        tranformProperty.push(
+          'perspective(' +
+            perspective +
+            'px) rotateY(' +
+            -coordinateX / rotatingFactor +
+            'deg) rotateX(' +
+            coordinateY / rotatingFactor +
+            'deg)'
+        )
       }
 
-      if (object[i].classList.contains('is-translating') || object[i].classList.contains('is-rotating')) {
+      if (
+        object[i].classList.contains('is-translating') ||
+        object[i].classList.contains('is-rotating')
+      ) {
         tranformProperty = tranformProperty.join(' ')
 
         object[i].style.transform = tranformProperty
@@ -120,11 +139,11 @@
 
   // Call function with throttling
   if (movingObjects) {
-    win.addEventListener('mousemove', throttle(
-      function (e) {
+    win.addEventListener(
+      'mousemove',
+      throttle(function (e) {
         moveObjects(e, movingObjects)
-      },
-      150
-    ))
+      }, 150)
+    )
   }
-}())
+})()
