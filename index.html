@@ -61,15 +61,17 @@
               <h1 class="hero-title mt-0">Landing template for startups</h1>
               <p class="hero-paragraph">Our landing page template works on all devices, so you only have
                 to set it up once, and get beautiful results forever.</p>
-              <div class="ml-lg-0 footer-form newsletter-form field field-grouped">
-                <div class="control control-expanded">
-                  <input class="input" type="email" name="email" placeholder="Your best email…">
+              <form action="https://formspree.io/sonbt@steenify.com" method="POST">
+                <div class="ml-lg-0 footer-form newsletter-form field field-grouped">
+                  <input type="hidden" name="name" value="TMWorld form submit">
+                  <div class="control control-expanded">
+                    <input class="input" type="email" name="_replyto" placeholder="Your best email…">
+                  </div>
+                  <div class="control">
+                    <button class="button button-primary button-block button-shadow" type="submit">Early access</button>
+                  </div>
                 </div>
-                <div class="control">
-                  <a class="button button-primary button-block button-shadow" href="#">Early access</a>
-                </div>
-              </div>
-
+              </form>
             </div>
             <div class="col-lg-6 hero-app">
               <img class="device-mockup w-100" src="dist/images/hero__backgound_user.jpg" alt="App preview">
