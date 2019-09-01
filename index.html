@@ -21,7 +21,7 @@
           <div class="brand header-brand">
             <h1 class="m-0">
               <span class="sr-only"> TMWorld </span>
-              <a title="TMWorld" href="/">
+              <a title="TMWorld" class="smootscroll" href="#hero">
                 <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 58.65">
                   <title>icon-only</title>
                   <g id="Layer_2" data-name="Layer 2">
@@ -60,22 +60,22 @@
           <div class="site-header__nav">
             <ul class="site-header__menu">
               <li class="site-header__item">
-                <a href="#" class="site-header__link">
+                <a href="#tm" class="site-header__link smootscroll">
                   Toastmasters
                 </a>
               </li>
               <li class="site-header__item">
-                <a href="#" class="site-header__link">
+                <a href="#clubs" class="site-header__link smootscroll">
                   Clubs
                 </a>
               </li>
               <li class="site-header__item">
-                <a href="#" class="site-header__link">
+                <a href="#pricing" class="site-header__link smootscroll">
                   Pricing
                 </a>
               </li>
               <li class="site-header__item">
-                <a href="#" class="site-header__link">
+                <a href="#faqs" class="site-header__link smootscroll">
                   FaQs
                 </a>
               </li>
@@ -86,7 +86,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container">
           <div class="hero-inner row align-items-center">
             <div class="col-lg-6 hero-copy">
@@ -111,15 +111,17 @@
           </div>
         </div>
       </section>
-
-      <section class="features section">
+      <section id="tm" class="features section">
         <div class="container">
           <div class="features-inner section-inner has-bottom-divider">
 
             <div class="row align-items-center">
               <div class="col-md-4">
                 <div class="features__img pr-2">
-                  <img src="/dist/images/iOS.gif" class="w-100" alt="App preview">
+                  <video class="video w-100" loop="" playsinline="" muted="muted" autoplay="" preload="none">
+                    <source src="videos/video__01__zip.webm" type="video/webm" />
+                    <source src="videos/video__01__zip.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
               <div class="col-md-8">
@@ -255,7 +257,7 @@
           </div>
         </div>
       </section>
-      <section class="features section">
+      <section id="clubs" class="features section">
         <div class="container">
           <div class="features-inner section-inner has-bottom-divider">
             <div class="row align-items-center">
@@ -388,16 +390,17 @@
               </div>
               <div class="col-md-4">
                 <div class="features__img pl-2">
-                  <img src="/dist/images/iOS.gif" class="w-100" alt="App preview">
+                  <video class="video w-100" loop="" playsinline="" muted="muted" autoplay="" preload="none">
+                    <source src="videos/video__02__zip.webm" type="video/webm" />
+                    <source src="videos/video__02__zip.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-      <section class="pricing section">
+      <section id="pricing" class="pricing section">
         <div class="section-square"></div>
         <div class="container">
           <div class="pricing-inner section-inner has-top-divider">
@@ -554,9 +557,7 @@
           </div>
         </div>
       </section>
-
-
-      <section class="pricing section">
+      <section id="faqs" class="pricing section">
         <div class="container">
           <div class="pricing-inner section-inner has-top-divider">
             <div class="pricing-faqs container-sm is-revealing">
@@ -611,7 +612,6 @@
           </div>
         </div>
       </section>
-
 
     </main>
 

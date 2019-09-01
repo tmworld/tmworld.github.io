@@ -1,4 +1,5 @@
 ;(function () {
+  const $ = window.jQuery
   const win = window
   const doc = document.documentElement
 
@@ -226,4 +227,15 @@
       }, 150)
     )
   }
+
+  $('.smootscroll').on('click', function (e) {
+    e.preventDefault()
+    var sec = $(this).attr('href')
+    $('html, body').animate(
+      {
+        scrollTop: $(sec).offset().top
+      },
+      500
+    )
+  })
 })()
