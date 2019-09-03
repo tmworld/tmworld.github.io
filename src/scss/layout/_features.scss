@@ -4,6 +4,10 @@
   .section-title {
     margin-bottom: 48px;
   }
+
+  &__img {
+    margin-bottom: 15px;
+  }
 }
 
 .features-wrap {
@@ -86,5 +90,13 @@
 
   .feature {
     padding: 32px 30px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .features__video {
+    order: 3;
+    margin-top: 30px;
   }
 }

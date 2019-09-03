@@ -237,5 +237,25 @@
       },
       500
     )
+
+    $('.nav-icon.site-header__control').removeClass('open')
+    $('.site-header').removeClass('open')
+    if ($(window).width() <= 768) {
+      $('.site-header__nav')
+        .stop()
+        .slideUp()
+    }
+  })
+
+  $(document).ready(function () {
+    $('.nav-icon.site-header__control').click(function () {
+      $(this).toggleClass('open')
+
+      $('.site-header').toggleClass('open')
+
+      $('.site-header__nav')
+        .stop()
+        .slideToggle()
+    })
   })
 })()
