@@ -1,688 +1,466 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TMWorld</title>
-  <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TMWorld</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="dist/css/style.css">
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
 <body class="is-boxed has-animations">
-  <div class="body-wrap boxed-container">
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header-inner">
-          <div class="brand header-brand">
-            <h1 class="m-0">
-              <span class="sr-only"> TMWorld </span>
-              <a title="TMWorld" class="smootscroll" href="#hero">
-                <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.65 58.65">
-                  <title>icon-only</title>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                      <path fill="#fff"
-                        d="M52.82,0h-47A5.82,5.82,0,0,0,0,5.82v47a5.82,5.82,0,0,0,5.82,5.82h9.82l-.79-15.84a.51.51,0,0,1,.47-.6h28a.51.51,0,0,1,.47.6L43,58.65h9.82a5.82,5.82,0,0,0,5.82-5.82v-47A5.82,5.82,0,0,0,52.82,0ZM49.36,29.71,47,40.41a.64.64,0,0,1-.57.51H12.23a.64.64,0,0,1-.57-.51L9.29,29.71c-.08-.36.09-.66.39-.66H26.35a3,3,0,0,1,2.18-1V23.78a.17.17,0,0,1,.17-.17h.1c0-1,0-1.8,0-2.51a4.28,4.28,0,0,1,.78-2.3,1.28,1.28,0,0,1-.11-1.66l3.72-4.94a1.28,1.28,0,1,1,2,1.54l-3.72,4.94a1.27,1.27,0,0,1-.93.5A5.46,5.46,0,0,0,30,20.85v2.75a.17.17,0,0,1,.17.17V28a3,3,0,0,1,2.11,1H49C49.26,29.05,49.44,29.35,49.36,29.71Z" />
-                      <rect fill="#fff" x="30.49" y="49.99" width="8.28" height="1" rx="0.5" ry="0.5"
-                        transform="translate(-15.86 85.12) rotate(-90)" />
-                      <rect fill="#fff" x="25.18" y="49.99" width="8.28" height="1" rx="0.5" ry="0.5"
-                        transform="translate(-21.17 79.81) rotate(-90)" />
-                      <rect fill="#fff" x="19.88" y="49.99" width="8.28" height="1" rx="0.5" ry="0.5"
-                        transform="translate(-26.47 74.51) rotate(-90)" />
-                      <path fill="#fff" d="M27.05,34.79h2.06V32.73H27.38A8,8,0,0,0,27.05,34.79Z" />
-                      <path fill="#fff" d="M26.64,35.21H24.58a5,5,0,0,0,.58,2.06h1.78A10.37,10.37,0,0,1,26.64,35.21Z" />
-                      <path fill="#fff" d="M27.51,32.32h1.61V30.5C28.46,30.62,27.88,31.33,27.51,32.32Z" />
-                      <path fill="#fff" d="M29.53,30.5v1.82h1.61C30.77,31.33,30.19,30.62,29.53,30.5Z" />
-                      <path fill="#fff" d="M31.26,32.73H29.53v2.06h2.06A8,8,0,0,0,31.26,32.73Z" />
-                      <path fill="#fff" d="M32,35.21a8,8,0,0,1-.29,2.06h1.78a5,5,0,0,0,.58-2.06Z" />
-                      <path fill="#fff" d="M27.38,37.27h1.73V35.21H27.05A8,8,0,0,0,27.38,37.27Z" />
-                      <path fill="#fff" d="M26.93,32.73H25.15a5,5,0,0,0-.58,2.06h2.06A10.37,10.37,0,0,1,26.93,32.73Z" />
-                      <path fill="#fff" d="M29.12,39.5V37.68H27.51C27.88,38.67,28.46,39.38,29.12,39.5Z" />
-                      <path fill="#fff" d="M27.05,37.68H25.4a4.82,4.82,0,0,0,3,2A4.07,4.07,0,0,1,27.05,37.68Z" />
-                      <path fill="#fff" d="M30.23,39.67a4.55,4.55,0,0,0,3-2H31.55A3.59,3.59,0,0,1,30.23,39.67Z" />
-                      <path fill="#fff" d="M31.59,32.32h1.65a4.82,4.82,0,0,0-3-2A4.07,4.07,0,0,1,31.59,32.32Z" />
-                      <path fill="#fff" d="M28.42,30.33a4.55,4.55,0,0,0-3,2h1.65A3.59,3.59,0,0,1,28.42,30.33Z" />
-                      <path fill="#fff" d="M29.53,37.68V39.5c.66-.12,1.24-.83,1.61-1.82Z" />
-                      <path fill="#fff" d="M31.59,35.21H29.53v2.06h1.73A8,8,0,0,0,31.59,35.21Z" />
-                      <path fill="#fff" d="M32,34.79h2.06a5,5,0,0,0-.58-2.06H31.72A10.37,10.37,0,0,1,32,34.79Z" />
-                    </g>
-                  </g>
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 93.49 13.28">
-                  <title>text-only</title>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g fill="#fff" id="Layer_1-2" data-name="Layer 1">
-                      <path d="M6.24,13.11H3.5V2.48H0V.2H9.74V2.48H6.24Z" />
-                      <path
-                        d="M17.19,13.11,14.09,3H14q.17,3.09.17,4.12v6H11.73V.2h3.72l3.05,9.87h.05L21.8.2h3.72v12.9H23V7q0-.43,0-1t.12-3H23L19.7,13.11Z" />
-                      <path
-                        d="M41.34,13.11H38.23L36.48,6.33q-.1-.36-.33-1.5t-.27-1.52q-.05.48-.26,1.53t-.33,1.5l-1.74,6.76H30.44L27.15.2h2.69l1.65,7q.43,2,.63,3.38.05-.5.24-1.56t.36-1.64L34.6.2h2.59l1.88,7.23q.12.49.31,1.48t.28,1.71q.09-.69.28-1.72t.35-1.66l1.64-7h2.69Z" />
-                      <path
-                        d="M58,6.64a7,7,0,0,1-1.59,4.92,5.89,5.89,0,0,1-4.55,1.72,5.89,5.89,0,0,1-4.55-1.72,7,7,0,0,1-1.59-4.94A6.93,6.93,0,0,1,47.27,1.7,6,6,0,0,1,51.84,0a5.87,5.87,0,0,1,4.55,1.71A7,7,0,0,1,58,6.64Zm-9.42,0a5.39,5.39,0,0,0,.82,3.26A2.87,2.87,0,0,0,51.82,11q3.27,0,3.27-4.35T51.84,2.28a2.89,2.89,0,0,0-2.46,1.1A5.37,5.37,0,0,0,48.54,6.64Z" />
-                      <path
-                        d="M63.37,8.16v5H60.64V.2H64.4a6.44,6.44,0,0,1,3.89,1,3.42,3.42,0,0,1,1.26,2.91,3.42,3.42,0,0,1-.63,2,4.15,4.15,0,0,1-1.77,1.39q2.91,4.35,3.8,5.62h-3l-3.08-5Zm0-2.22h.88a3.38,3.38,0,0,0,1.92-.43,1.54,1.54,0,0,0,.62-1.36,1.41,1.41,0,0,0-.63-1.31,3.83,3.83,0,0,0-2-.39h-.83Z" />
-                      <path d="M72.57,13.11V.2H75.3V10.85h5.23v2.26Z" />
-                      <path
-                        d="M93.49,6.53a6.35,6.35,0,0,1-1.81,4.88,7.4,7.4,0,0,1-5.24,1.69H82.78V.2h4.05a6.82,6.82,0,0,1,4.91,1.67A6.14,6.14,0,0,1,93.49,6.53Zm-2.84.07q0-4.16-3.67-4.16H85.52v8.4h1.17Q90.64,10.85,90.64,6.6Z" />
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </h1>
-          </div>
-          <div class="site-header__nav">
-            <ul class="site-header__menu">
-              <li class="site-header__item">
-                <a href="#tm" class="site-header__link smootscroll">
-                  Toastmasters
-                </a>
-              </li>
-              <li class="site-header__item">
-                <a href="#clubs" class="site-header__link smootscroll">
-                  Clubs
-                </a>
-              </li>
-              <li class="site-header__item">
-                <a href="#pricing" class="site-header__link smootscroll">
-                  Pricing
-                </a>
-              </li>
-              <li class="site-header__item">
-                <a href="#faqs" class="site-header__link smootscroll">
-                  FaQs
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <button class="site-header__control nav-icon">
-            <div></div>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="hero" class="hero">
-        <div class="container">
-          <div class="hero-inner row align-items-center">
-            <div class="col-lg-6 hero-copy">
-              <h1 class="hero-title mt-0">Landing template for startups</h1>
-              <p class="hero-paragraph">Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.</p>
-              <form action="https://formspree.io/sonbui.gfd@gmail.com" method="POST">
-                <div class="ml-lg-0 footer-form newsletter-form field field-grouped">
-                  <input type="hidden" name="name" value="TMWorld form submit">
-                  <div class="control control-expanded">
-                    <input class="input" type="email" name="_replyto" placeholder="Your best email…">
-                  </div>
-                  <div class="control">
-                    <button class="button button-primary button-block button-shadow" type="submit">Early access</button>
-                  </div>
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img src="dist/images/logo.svg" alt="Blue logo">
+                            </a>
+                        </h1>
+                    </div>
                 </div>
-              </form>
             </div>
-            <div class="col-lg-6 hero-app">
-              <img class="device-mockup w-100" src="dist/images/hero__backgound_user.jpg" alt="App preview">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="tm" class="features section">
-        <div class="container">
-          <div class="features-inner section-inner has-bottom-divider">
+        </header>
 
-            <div class="row align-items-center">
-              <div class="col-lg-4 features__video">
-                <div class="features__img pr-2">
-                  <video class="video w-100" loop="" playsinline="" muted="muted" autoplay="" preload="none">
-                    <source src="videos/video__01__zip.webm" type="video/webm" />
-                    <source src="videos/video__01__zip.mp4" type="video/mp4">
-                  </video>
+        <main>
+            <section class="hero">
+				<div class="hero-left-decoration is-revealing"></div>
+				<div class="hero-right-decoration is-revealing"></div>
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Landing template for startups</h1>
+	                        <p class="hero-paragraph is-revealing">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <p class="hero-cta mb-0 is-revealing">
+								<a class="button button-primary button-shadow" href="#">Get started free</a>
+							</p>
+						</div>
+						<div class="hero-illustration">
+						</div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-8">
+            </section>
 
-                <h2 class="section-title ml-lg-5 mt-0 mb-5 text-center">Bold features</h2>
-                <div class="features-wrap">
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-b">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24"
-                              fill="url(#feature-1-a)" />
-                            <path d="M40 64H16V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24"
-                              fill="url(#feature-1-b)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
+            <section class="clients section">
+                <div class="container">
+                    <div class="clients-inner section-inner has-top-divider">
+                        <div class="container-sm">
+                            <ul class="list-reset mb-0">
+                                <li class="is-revealing">
+                                    <img src="dist/images/facebook-logo.svg" alt="Facebook logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/tinder-logo.svg" alt="Tinder logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/airbnb-logo.svg" alt="Airbnb logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/microsoft-logo.svg" alt="Microsoft logo">
+                                </li>
+								<li class="is-revealing">
+									<img src="dist/images/hubspot-logo.svg" alt="Hubspot logo">
+								</li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="68" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-b">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path d="M9.941 63.941v-24c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24h-24z"
-                              fill="url(#feature-2-a)" transform="rotate(45 33.941 39.941)" />
-                            <path d="M16 0v24c0 13.255 10.745 24 24 24h24V24C64 10.745 53.255 0 40 0H16z"
-                              fill="url(#feature-2-b)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="0%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z" />
-                            <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z" />
-                            <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z"
-                              fill="url(#feature-3-c)" transform="rotate(45 32 32)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="0%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z" />
-                            <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z" />
-                            <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z"
-                              fill="url(#feature-3-c)" transform="rotate(45 32 32)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
                 </div>
+            </section>
 
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <section id="clubs" class="features section">
-        <div class="container">
-          <div class="features-inner section-inner has-bottom-divider">
-            <div class="row align-items-center">
-              <div class="col-lg-8">
-
-                <h2 class="section-title ml-lg-5 mt-0 mb-5 text-center">Bold features</h2>
-                <div class="features-wrap">
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-b">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24"
-                              fill="url(#feature-1-a)" />
-                            <path d="M40 64H16V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24"
-                              fill="url(#feature-1-b)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
+			<section class="features section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Meet Blue</h2>
+								<p class="section-paragraph mb-0">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+							</div>
+						</div>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-01.svg" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title">Lorem Ipsum</h4>
+                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-02.svg" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title">Lorem Ipsum</h4>
+                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-03.svg" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title">Lorem Ipsum</h4>
+                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="dist/images/feature-icon-04.svg" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title">Lorem Ipsum</h4>
+                                    <p class="text-sm">often arouses curiosity due to its resemblance to classical latin</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="68" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-b">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path d="M9.941 63.941v-24c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24h-24z"
-                              fill="url(#feature-2-a)" transform="rotate(45 33.941 39.941)" />
-                            <path d="M16 0v24c0 13.255 10.745 24 24 24h24V24C64 10.745 53.255 0 40 0H16z"
-                              fill="url(#feature-2-b)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="0%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z" />
-                            <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z" />
-                            <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z"
-                              fill="url(#feature-3-c)" transform="rotate(45 32 32)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
-                  <div class="feature is-revealing">
-                    <div class="feature-inner">
-                      <div class="feature-icon">
-                        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
-                          <defs>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="0%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
-                              <stop stop-color="#F9425F" stop-opacity=".8" offset="0%" />
-                              <stop stop-color="#47A1F9" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                            <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
-                              <stop stop-color="#FDFFDA" offset="0%" />
-                              <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%" />
-                              <stop stop-color="#F9425F" stop-opacity="0" offset="100%" />
-                            </linearGradient>
-                          </defs>
-                          <g fill="none" fill-rule="evenodd">
-                            <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z" />
-                            <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z" />
-                            <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z"
-                              fill="url(#feature-3-c)" transform="rotate(45 32 32)" />
-                          </g>
-                        </svg>
-                      </div>
-                      <h3 class="feature-title mt-24">Discover</h3>
-                      <p class="text-sm mb-0">A pseudo-Latin text used in web design, layout, and printing
-                        in place of things to emphasise design.</p>
-                    </div>
-                  </div>
                 </div>
+            </section>
 
-              </div>
-              <div class="col-lg-4 features__video">
-                <div class="features__img pl-2">
-                  <video class="video w-100" loop="" playsinline="" muted="muted" autoplay="" preload="none">
-                    <source src="videos/video__02__zip.webm" type="video/webm" />
-                    <source src="videos/video__02__zip.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="pricing" class="pricing section">
-        <div class="section-square"></div>
-        <div class="container">
-          <div class="pricing-inner section-inner has-top-divider">
-            <h2 class="section-title mt-0 text-center">Pricing</h2>
-            <div class="pricing-tables-wrap">
-              <div class="pricing-table">
-                <div class="pricing-table-inner">
-                  <div class="pricing-table-main">
-                    <div class="pricing-table-header is-revealing">
-                      <div class="pricing-table-title mt-12 mb-8">Starter</div>
-                      <div class="pricing-table-price mb-32 pb-24"><span
-                          class="pricing-table-price-currency h4">$</span><span
-                          class="pricing-table-price-amount h2">27</span>/mo</div>
+			<section class="features-tabs section">
+                <div class="container">
+                    <div class="features-tabs-inner section-inner has-top-divider">
+						<div class="tabs-container">
+							<ul class="tabs-links">
+								<li class="is-revealing">
+									<a href="#tab-1" class="tab-link is-active">
+										<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
+										<span class="h4 m-0">Amazing features</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-2" class="tab-link">
+										<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
+										<span class="h4 m-0">Endless possibilities</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-3" class="tab-link">
+										<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+										<span class="h4 m-0">Ease of use</span>
+									</a>
+								</li>
+							</ul>
+							<div class="tabs-content">
+								<div id="tab-1" class="tab-panel is-active">
+									<h2>Discover</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<p class="mb-0">A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+								</div>
+								<div id="tab-2" class="tab-panel">
+									<h2>Power of customisation</h2>
+									<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+									<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
+								</div>
+								<div id="tab-3" class="tab-panel">
+									<h2>Keep it simple</h2>
+									<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+									<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+								</div>
+							</div>
+						</div>
                     </div>
-                    <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                      <li class="is-revealing">
-                        <span class="list-icon">
+                </div>
+            </section>
+
+			<section class="testimonials section">
+				<div class="container">
+					<div class="testimonials-inner section-inner">
+						<div class="testimonials-header text-center text-light">
+							<h2 class="section-title mt-0">Testimonials</h2>
+						</div>
+						<div class="testimonials-wrap">
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <section class="pricing section">
+                <div class="container">
+                    <div class="pricing-inner section-inner">
+                        <h2 class="section-title mt-0 text-center">Pricing</h2>
+						<div>
+							<div class="pricing-tables-wrap">
+								<div class="pricing-table is-revealing">
+									<div class="pricing-table-inner">
+										<div class="pricing-table-main">
+											<div class="pricing-table-header mb-24 pb-24">
+												<div class="pricing-table-title h4 mt-0 mb-16">Startup</div>
+												<div class="pricing-table-price"><span class="pricing-table-price-currency">$</span><span class="pricing-table-price-amount h1">29</span>/m</div>
+											</div>
+											<ul class="pricing-table-features list-reset text-xs">
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+											</ul>
+										</div>
+										<div class="pricing-table-cta">
+											<a class="button button-secondary button-shadow button-block" href="#">Get started</a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-table is-revealing">
+									<div class="pricing-table-inner">
+										<div class="pricing-table-main">
+											<div class="pricing-table-header mb-24 pb-24">
+												<div class="pricing-table-title h4 mt-0 mb-16">Enterprise</div>
+												<div class="pricing-table-price"><span class="pricing-table-price-currency">$</span><span class="pricing-table-price-amount h1">49</span>/m</div>
+											</div>
+											<ul class="pricing-table-features list-reset text-xs">
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+												<li>
+													<span>Lorem ipsum dolor sit amet</span>
+												</li>
+											</ul>
+										</div>
+										<div class="pricing-table-cta">
+											<a class="button button-primary button-shadow button-block" href="#">Get started</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pricing-faqs container-sm is-revealing">
+							<h4 class="mt-40 mb-32">FAQs</h4>
+	                        <ul class="accordion">
+	                            <li>
+	                                <div class="accordion-title">
+										<span>In a professional context it often happens that private?</span>
+										<div class="accordion-icon"></div>
+									</div>
+	                                <div class="accordion-body">
+	                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+	                                </div>
+	                            </li>
+								<li>
+									<div class="accordion-title">
+										<span>Lorem ipsum dolor sit amet, consectetur</span>
+										<div class="accordion-icon"></div>
+									</div>
+									<div class="accordion-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-title">
+										<span>In a professional context it often happens that private?</span>
+										<div class="accordion-icon"></div>
+									</div>
+									<div class="accordion-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+									</div>
+								</li>
+								<li>
+									<div class="accordion-title">
+										<span>Lorem ipsum dolor sit amet, consectetur</span>
+										<div class="accordion-icon"></div>
+									</div>
+									<div class="accordion-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</li>
+	                        </ul>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner is-revealing">
+						<h3 class="section-title mt-0">Still not convinced?</h3>
+						<div class="cta-cta">
+							<a class="button button-primary button-shadow" href="#">Schedule a live demo</a>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <img src="dist/images/logo.svg" alt="Blue logo">
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Google</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2018 Blue, all rights reserved</div>
+
+                    <ul class="footer-social-links list-reset">
+                      <li>
+                        <a href="#">
+                          <span class="screen-reader-text">Facebook</span>
                           <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
+                            <path
+                              d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                              fill="#FFF" />
                           </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
+                        </a>
                       </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
+                      <li>
+                        <a href="#">
+                          <span class="screen-reader-text">Twitter</span>
                           <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
+                            <path
+                              d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                              fill="#FFF" />
                           </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
+                        </a>
                       </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
+                      <li>
+                        <a href="#">
+                          <span class="screen-reader-text">Google</span>
                           <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
+                            <path
+                              d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
+                              fill="#FFF" />
                           </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
+                        </a>
                       </li>
                     </ul>
-                  </div>
-                  <div class="pricing-table-cta is-revealing">
-                    <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                  </div>
                 </div>
-              </div>
-              <div class="pricing-table">
-                <div class="pricing-table-inner">
-                  <div class="pricing-table-main">
-                    <div class="pricing-table-header is-revealing">
-                      <div class="pricing-table-title mt-12 mb-8">Professional</div>
-                      <div class="pricing-table-price mb-32 pb-24"><span
-                          class="pricing-table-price-currency h4">$</span><span
-                          class="pricing-table-price-amount h2">97</span>/mo</div>
-                    </div>
-                    <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="pricing-table-cta is-revealing">
-                    <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                  </div>
-                </div>
-              </div>
-              <div class="pricing-table">
-                <div class="pricing-table-inner">
-                  <div class="pricing-table-main">
-                    <div class="pricing-table-header is-revealing">
-                      <div class="pricing-table-title mt-12 mb-8">Business</div>
-                      <div class="pricing-table-price mb-32 pb-24"><span
-                          class="pricing-table-price-currency h4">$</span><span
-                          class="pricing-table-price-amount h2">147</span>/mo</div>
-                    </div>
-                    <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                      <li class="is-revealing">
-                        <span class="list-icon">
-                          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z" />
-                          </svg>
-                        </span>
-                        <span>Lorem ipsum is common text </span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="pricing-table-cta is-revealing">
-                    <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="faqs" class="pricing section">
-        <div class="container">
-          <div class="pricing-inner section-inner has-top-divider">
-            <div class="pricing-faqs container-sm is-revealing">
-              <h2 class="section-title mt-0 text-center">FAQs</h2>
-              <ul class="accordion">
-                <li>
-                  <div class="accordion-title">
-                    <span>In a professional context it often happens that private?</span>
-                    <div class="accordion-icon"></div>
-                  </div>
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="accordion-title">
-                    <span>Lorem ipsum dolor sit amet, consectetur</span>
-                    <div class="accordion-icon"></div>
-                  </div>
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem
-                      ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="accordion-title">
-                    <span>In a professional context it often happens that private?</span>
-                    <div class="accordion-icon"></div>
-                  </div>
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="accordion-title">
-                    <span>Lorem ipsum dolor sit amet, consectetur</span>
-                    <div class="accordion-icon"></div>
-                  </div>
-                  <div class="accordion-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam semper. Lorem
-                      ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                      dolore magna aliqua.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="site-footer-inner has-top-divider">
-          <div class="footer-copyright">&copy; 2019 TMWorld, all rights reserved</div>
-
-          <ul class="footer-social-links list-reset">
-            <li>
-              <a href="#">
-                <span class="screen-reader-text">Facebook</span>
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
-                    fill="#FFF" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="screen-reader-text">Twitter</span>
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
-                    fill="#FFF" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="screen-reader-text">Google</span>
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
-                    fill="#FFF" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
 </body>
-
 </html>
