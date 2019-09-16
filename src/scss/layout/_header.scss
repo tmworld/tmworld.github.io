@@ -1,54 +1,143 @@
 .site-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 12;
+
+  &-inner {
     position: relative;
-    padding: 24px 0;
-}
-
-.header-sun {
-	position: absolute;
-	top: -88px;
-	right: -60px;
-}
-
-.site-header-inner {
-    position: relative; /* To display all elements above the background color */
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__logo {
+    height: 70px;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0px;
+  }
+
+  &__item {
+    margin-left: 15px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+
+    &:hover {
+      color: #09955A;
+      text-decoration: none;
+    }
+  }
+
+  &__control {
+    display: none;
+  }
+
+}
+
+.header-brand {
+  .smootscroll {
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-right: 15px;
+  }
 }
 
 .header-links {
+  display: inline-flex;
+
+  li {
     display: inline-flex;
+  }
 
-    li {
-        display: inline-flex;
+  a:not(.button) {
+    @include font-size(7, mobile, true, true, true);
+
+    @if (get-font-size(7, desktop) !=get-font-size(7, mobile)) {
+      @include media('>medium') {
+        @include font-size(7, desktop, true, true, true);
+      }
     }
 
-    a:not(.button) {
-        @include font-size(7, mobile, true, true, true);
-        @if ( get-font-size(7, desktop) != get-font-size(7, mobile) ) {
-            @include media( '>medium' ) {
-                @include font-size(7, desktop, true, true, true);
-            }
+    @include font-weight(bold);
+    @include anchor-aspect(header);
+    line-height: 16px;
+    padding: 8px 24px;
+  }
+}
+
+@include media('>medium') {
+
+  .site-header {
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .site-header {
+
+    &.open {
+      background: #fff;
+
+      .header-brand {
+        svg * {
+          // fill: #06101F;
         }
-        @include font-weight(bold);
-        @include anchor-aspect(header);
-        line-height: 16px;
-        padding: 8px 24px;
+      }
     }
-}
 
-@include media( '>medium' ) {
+    &__control {
+      display: block;
 
-	.header-sun {
-		left: 440px;
-		right: auto;
-	}
-}
+      &.open {
 
-@include media( '>large' ) {
+        &::before,
+        &::after,
+        div {
+          background-color: #05955a;
+        }
+      }
+    }
 
-	.header-sun {
-		left: auto;
-		right: 43%;
-	}
+    &__nav {
+      display: none;
+      padding-top: 20px;
+      position: absolute;
+      top: 100%;
+      background: #fff;
+      left: -24px;
+      right: -24px;
+    }
+
+    &__menu {
+      display: block;
+      // padding: 0;
+    }
+
+    &__item {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+  }
 }
