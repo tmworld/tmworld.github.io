@@ -31,23 +31,18 @@
 }
 
 .hero-main-shape {
-
-  svg {
-    width: 140%;
-    height: auto;
-  }
+  position: relative;
 }
 
 @include media('>medium') {
 
   .hero {
     text-align: left;
-    padding-top: 160px;
   }
 
   .hero-inner {
-    /* Split hero in two half */
     display: flex;
+    align-items: center;
   }
 
   .hero-copy {
@@ -60,7 +55,6 @@
   }
 
   .hero-illustration {
-    margin-top: -143px;
     padding-bottom: 0;
   }
 

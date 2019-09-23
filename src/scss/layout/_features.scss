@@ -12,6 +12,10 @@
   &:last-child {
     margin-bottom: -16px;
   }
+
+  .feature {
+    cursor: pointer;
+  }
 }
 
 .features-inner {
@@ -22,6 +26,16 @@
 .feature-header {
   display: flex;
   align-items: center;
+}
+
+.features {
+  &__img {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }
 
 @include media('>medium') {
