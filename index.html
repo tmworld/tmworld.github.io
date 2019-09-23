@@ -116,14 +116,17 @@
               <h1 class="hero-title mt-0">Landing template for startups</h1>
               <p class="hero-paragraph">Our landing page template works on all devices, so you only have
                 to set it up once, and get beautiful results forever.</p>
-              <div class="hero-form field field-grouped">
-                <div class="control control-expanded">
-                  <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+              <form action="https://formspree.io/sonbui.gfd@gmail.com" method="POST">
+                <div class="hero-form field field-grouped">
+                  <input type="hidden" value="tmworld newsletter" name="name">
+                  <div class="control control-expanded">
+                    <input class="input" type="email" required name="_replyto" placeholder="Your best email&hellip;">
+                  </div>
+                  <div class="control">
+                    <button class="button button-primary button-block" type="submit">Early access</button>
+                  </div>
                 </div>
-                <div class="control">
-                  <a class="button button-primary button-block" href="#">Early access</a>
-                </div>
-              </div>
+              </form>
             </div>
             <div class="hero-illustration">
               <div class="hero-main-shape">
@@ -139,6 +142,38 @@
         <div class="container mt-40">
           <div class="clients-inner section-inner has-top-divider">
             <div class="container-sm">
+              <ul class="list-reset mb-0">
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 1
+                  </a>
+                </li>
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 100
+                  </a>
+                </li>
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 101
+                  </a>
+                </li>
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 71
+                  </a>
+                </li>
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 91
+                  </a>
+                </li>
+                <li class="is-revealing">
+                  <a href="#" class="clients__item">
+                    District 80
+                  </a>
+                </li>
+              </ul>
               <ul class="list-reset mb-0">
                 <li class="is-revealing">
                   <a href="#" class="clients__item">
@@ -465,7 +500,7 @@
                 <input class="rb-100" name="contact-preference" id="rb-100" type="radio" />
                 <div class="paypal paypal-100"></div>
               </div>
-
+              <div class="mb-24"></div>
             </div>
 
             <div class="col-md-5">
@@ -548,8 +583,6 @@
                 <path
                   d="M71 58.6H24C20.8 58.6 18.2 56 18.2 52.8V5.8C18.2 2.6 20.8 0 24 0H71C74.2 0 76.8 2.6 76.8 5.8V52.7C76.8 56 74.2 58.6 71 58.6Z"
                   fill="#09955A" />
-
-
                 <path
                   d="M33.8998 58.7L33.0999 42.8C33.0999 42.5 33.2999 42.2 33.5999 42.2H61.5999C61.8999 42.2 62.0999 42.5 62.0999 42.8L61.2999 58.8L33.8998 58.7Z"
                   fill="white" />
@@ -575,17 +608,31 @@
             </a>
           </div>
           <ul class="footer-links list-reset">
+
             <li>
-              <a href="#">Contact</a>
+              <a href="#clients" class=" smootscroll">
+                Joins
+              </a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="#features" class=" smootscroll">
+                Features
+              </a>
             </li>
             <li>
-              <a href="#">FAQ's</a>
+              <a href="#testimonials" class=" smootscroll">
+                Testimonials
+              </a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a href="#donates" class=" smootscroll">
+                Donates
+              </a>
+            </li>
+            <li>
+              <a href="#FaQs" class=" smootscroll">
+                FaQs
+              </a>
             </li>
           </ul>
           <ul class="footer-social-links list-reset">
@@ -600,7 +647,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/tmworldapp">
                 <span class="screen-reader-text">Twitter</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -610,12 +657,16 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/tmworldapp/">
                 <span class="screen-reader-text">Google</span>
-                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z"
-                    fill="#FFF" />
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path fill="#FFF"
+                    d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48    h192c61.76,0,112,50.24,112,112V352z" />
+                  <path fill="#FFF"
+                    d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336    c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                  <circle fill="#FFF" cx="393.6" cy="118.4" r="17.056" />
                 </svg>
               </a>
             </li>

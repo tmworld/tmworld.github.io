@@ -102,9 +102,16 @@
   display: none;
 }
 
+.donates__btn {
+  .label {
+    min-width: 100px;
+  }
+}
+
 .donates__control {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .donates__paypal {
