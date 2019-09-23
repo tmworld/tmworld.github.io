@@ -435,10 +435,30 @@
                 of a document or visual presentation.</p>
 
               <div class="donates__control">
-                <a class="button button-primary" href="#">5$</a>
-                <a class="button button-primary" href="#">10$</a>
-                <a class="button button-primary" href="#">15$</a>
-                <a class="button button-primary" href="#">20$</a>
+                <div class="donates__btn d-inline-block mr-16">
+                  <input class="rb-10 sr-only" name="contact-preference" id="rb-10" type="radio" checked="checked" />
+                  <label class="label button button-primary" for="rb-10">$10</label>
+                </div>
+
+                <div class="donates__btn d-inline-block mr-16">
+                  <input class="rb-25 sr-only" name="contact-preference" id="rb-25" type="radio" checked="checked" />
+                  <label class="label button button-primary" for="rb-25">$25</label>
+                </div>
+                <div class="donates__btn d-inline-block mr-16">
+                  <input class="rb-50 sr-only" name="contact-preference" id="rb-50" type="radio" checked="checked" />
+                  <label class="label button button-primary" for="rb-50">$50</label>
+                </div>
+                <div class="donates__btn d-inline-block mr-16">
+                  <input class="rb-100 sr-only" name="contact-preference" id="rb-100" type="radio" checked="checked" />
+                  <label class="label button button-primary" for="rb-100">$100</label>
+                </div>
+                ​
+                <div class="paypal-10"></div>
+                <div class="paypal-25"></div>
+                <div class="paypal-50"></div>
+                <div class="paypal-100"></div>
+                ​
+
               </div>
             </div>
 
@@ -600,8 +620,168 @@
       </div>
     </footer>
   </div>
+
+  <style type="text/css">
+    .paypal-10,
+    .paypal-25,
+    .paypal-50,
+    .paypal-100 {
+      display: none;
+    }
+
+    ​ .rb-10:checked~.paypal-10 {
+      display: inline;
+    }
+
+    ​ .rb-25:checked~.paypal-25 {
+      display: inline;
+    }
+
+    ​ .rb-50:checked~.paypal-50 {
+      display: inline;
+    }
+
+    ​ .rb-100:checked~.paypal-100 {
+      display: inline;
+    }
+
+  </style>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AauO10mjkY-TLrAw0jfFJ53Pow8Zr530W-wNv5k493YBgRW5ox7luzaCOD6-1mzE7Ja0AadJ9E5CvL6Y&disable-funding=credit,card&currency=SGD">
+  </script>
+
+  <script>
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 10,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-10');
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 25,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-25');
+
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 50,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-50');
+
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 100,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-100');
+
+  </script>
   <script src="dist/js/main.min.js"></script>
 </body>
 
