@@ -96,3 +96,27 @@
 # Footer
 --------------------------------------------------------------*/
 @import "layout/footer";
+
+
+.paypal {
+  display: none;
+}
+
+.donates__control {
+  display: flex;
+  align-items: flex-start;
+}
+
+.donates__paypal {
+  text-align: right;
+
+  input {
+    display: none;
+  }
+
+  input:checked~.paypal {
+    display: block;
+  }
+
+
+}
