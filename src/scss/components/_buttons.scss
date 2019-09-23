@@ -172,10 +172,12 @@
 
 
 .nav-icon {
-  width: 50px;
+  width: 40px;
+  border-radius: 0;
   background: none;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 .nav-icon:after,
