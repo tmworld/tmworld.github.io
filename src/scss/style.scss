@@ -98,7 +98,8 @@
 @import "layout/footer";
 
 
-.paypal {
+.paypal,
+.paypal__input {
   display: none;
 }
 
@@ -112,18 +113,54 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .donates__paypal {
-  text-align: right;
+  max-width: 320px;
+  margin: auto;
+}
 
-  input {
-    display: none;
-  }
+.rb-10:checked {
 
-  input:checked~.paypal {
+  &~.donates__paypal .paypal-10 {
     display: block;
   }
 
+  &~.donates__control .label-10 {
+    background: #ffc439;
+  }
+}
 
+.rb-25:checked {
+
+  &~.donates__paypal .paypal-25 {
+    display: block;
+  }
+
+  &~.donates__control .label-25 {
+    background: #ffc439;
+  }
+}
+
+.rb-50:checked {
+
+  &~.donates__paypal .paypal-50 {
+    display: block;
+  }
+
+  &~.donates__control .label-50 {
+    background: #ffc439;
+  }
+}
+
+.rb-100:checked {
+
+  &~.donates__paypal .paypal-100 {
+    display: block;
+  }
+
+  &~.donates__control .label-100 {
+    background: #ffc439;
+  }
 }
