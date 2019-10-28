@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMWorld</title>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+  <div class="body-wrap boxed-container">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-inner">
+          <div class="brand header-brand">
+            <h1 class="m-0">
+              <span class="sr-only"> TMWorld </span>
+              <a title="TMWorld" class="" href="/">
+                <svg width="94" height="86" viewBox="0 0 94 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M71 58.6H24C20.8 58.6 18.2 56 18.2 52.8V5.8C18.2 2.6 20.8 0 24 0H71C74.2 0 76.8 2.6 76.8 5.8V52.7C76.8 56 74.2 58.6 71 58.6Z"
+                    fill="#09955A" />
+                  <path d="M6.59991 85.9H3.8999V75.3H0.399902V73H10.0999V75.3H6.59991V85.9Z" fill="#09955A" />
+                  <path
+                    d="M17.5 85.9L14.4 75.8H14.3C14.4 77.9 14.5 79.2 14.5 79.9V85.9H12V73H15.7L18.8 82.9H18.9L22.1 73H25.8V85.9H23.3V79.8C23.3 79.5 23.3 79.2 23.3 78.8C23.3 78.4 23.3 77.4 23.4 75.8H23.3L20 85.9H17.5Z"
+                    fill="#09955A" />
+                  <path
+                    d="M41.5999 85.9H38.4999L36.7999 79.1C36.6999 78.9 36.5999 78.4 36.4999 77.6C36.2999 76.8 36.2999 76.3 36.1999 76.1C36.1999 76.4 36.0999 76.9 35.8999 77.6C35.7999 78.3 35.6999 78.8 35.5999 79.1L33.8999 85.9H30.7999L27.3999 73H30.0999L31.6999 80C31.9999 81.3 32.1999 82.4 32.2999 83.4C32.2999 83.1 32.3999 82.5 32.4999 81.8C32.5999 81.1 32.6999 80.6 32.8999 80.2L34.7999 73H37.3999L39.2999 80.2C39.3999 80.5 39.4999 81 39.5999 81.7C39.6999 82.4 39.7999 82.9 39.8999 83.4C39.9999 82.9 40.0999 82.4 40.1999 81.7C40.2999 81 40.3999 80.5 40.5999 80L42.1999 73H44.8999L41.5999 85.9Z"
+                    fill="#09955A" />
+                  <path
+                    d="M58.2 79.4C58.2 81.5 57.7 83.2 56.6 84.3C55.5 85.4 54 86 52.1 86C50.1 86 48.6 85.4 47.6 84.3C46.5 83.2 46 81.5 46 79.4C46 77.3 46.5 75.6 47.6 74.5C48.7 73.4 50.2 72.8 52.2 72.8C54.2 72.8 55.7 73.4 56.7 74.5C57.7 75.7 58.2 77.3 58.2 79.4ZM48.8 79.4C48.8 80.8 49.1 81.9 49.6 82.7C50.1 83.4 51 83.8 52.1 83.8C54.3 83.8 55.4 82.4 55.4 79.5C55.4 76.6 54.3 75.1 52.1 75.1C51 75.1 50.2 75.5 49.6 76.2C49.1 76.9 48.8 78 48.8 79.4Z"
+                    fill="#09955A" />
+                  <path
+                    d="M63.5999 81V85.9H60.8999V73H64.6999C66.4999 73 67.6999 73.3 68.5999 74C69.3999 74.6 69.8999 75.6 69.8999 76.9C69.8999 77.7 69.6999 78.3 69.2999 78.9C68.8999 79.5 68.2999 80 67.4999 80.3C69.3999 83.2 70.6999 85.1 71.2999 85.9H68.2999L65.1999 81H63.5999ZM63.5999 78.7H64.4999C65.3999 78.7 65.9999 78.6 66.3999 78.3C66.7999 78 66.9999 77.6 66.9999 76.9C66.9999 76.3 66.7999 75.9 66.3999 75.6C65.9999 75.3 65.2999 75.2 64.3999 75.2H63.5999V78.7Z"
+                    fill="#09955A" />
+                  <path d="M72.7998 85.9V73H75.4998V83.6H80.6998V85.9H72.7998V85.9Z" fill="#09955A" />
+                  <path
+                    d="M93.7 79.3C93.7 81.4 93.1 83 91.9 84.2C90.7 85.3 88.9 85.9 86.7 85.9H83V73H87C89.1 73 90.7 73.6 91.9 74.7C93.1 75.8 93.7 77.3 93.7 79.3ZM90.9 79.4C90.9 76.6 89.7 75.2 87.2 75.2H85.7V83.6H86.9C89.6 83.6 90.9 82.2 90.9 79.4Z"
+                    fill="#09955A" />
+                  <path
+                    d="M33.8998 58.7L33.0999 42.8C33.0999 42.5 33.2999 42.2 33.5999 42.2H61.5999C61.8999 42.2 62.0999 42.5 62.0999 42.8L61.2999 58.8L33.8998 58.7Z"
+                    fill="white" />
+                  <path
+                    d="M67.4998 29.7L65.0998 40.4C64.9998 40.7 64.7998 40.9 64.4998 40.9H30.3998C30.0998 40.9 29.8998 40.7 29.7998 40.4L27.3998 29.7C27.2998 29.3 27.4998 29 27.7998 29H66.9998C67.3998 29 67.5998 29.3 67.4998 29.7Z"
+                    fill="white" />
+                  <path
+                    d="M50.3998 29C50.0998 28.5 49.2998 28.1 48.2998 28V23.7C48.2998 23.6 48.1998 23.5 48.0998 23.5C48.0998 22.6 48.0998 21.2 48.0998 20.8C48.0998 20.4 48.4998 19.6 48.6998 19.1C49.0998 19.1 49.3998 18.9 49.5998 18.6L53.2998 13.7C53.6998 13.1 53.5998 12.3 52.9998 11.9C52.3998 11.5 51.5998 11.6 51.1998 12.2L47.4998 17.1C47.0998 17.6 47.1998 18.3 47.5998 18.8C46.9998 19.7 46.7998 20.4 46.7998 21.1C46.7998 21.8 46.7998 22.7 46.7998 23.6H46.6998C46.5998 23.6 46.4998 23.7 46.4998 23.8V28C45.4998 28.1 44.5998 28.5 44.2998 29H50.3998Z"
+                    fill="white" />
+                  <path
+                    d="M53.3 46.8V54.1C53.3 54.4 53.1 54.6 52.8 54.6C52.5 54.6 52.3 54.4 52.3 54.1V46.8C52.3 46.5 52.5 46.3 52.8 46.3C53.1 46.3 53.3 46.5 53.3 46.8Z"
+                    fill="#09955A" />
+                  <path
+                    d="M48 46.8V54.1C48 54.4 47.8 54.6 47.5 54.6C47.2 54.6 47 54.4 47 54.1V46.8C47 46.5 47.2 46.3 47.5 46.3C47.8 46.3 48 46.5 48 46.8Z"
+                    fill="#09955A" />
+                  <path
+                    d="M42.7 46.8V54.1C42.7 54.4 42.5 54.6 42.2 54.6C41.9 54.6 41.7 54.4 41.7 54.1V46.8C41.7 46.5 41.9 46.3 42.2 46.3C42.5 46.3 42.7 46.5 42.7 46.8Z"
+                    fill="#09955A" />
+                  <path
+                    d="M38.3998 32.9H56.5998C56.8998 32.9 57.1998 33.2 57.1998 33.5C57.1998 33.8 56.8998 34.1 56.5998 34.1H38.3998C38.0998 34.1 37.7998 33.8 37.7998 33.5C37.8998 33.1 38.0998 32.9 38.3998 32.9Z"
+                    fill="#09955A" />
+                </svg>
+              </a>
+            </h1>
+          </div>
+          <div class="site-header__nav">
+            <ul class="site-header__menu">
+              <li class="site-header__item">
+                <a href="/#clients" class="site-header__link ">
+                  Joins
+                </a>
+              </li>
+              <li class="site-header__item">
+                <a href="/#features" class="site-header__link ">
+                  Features
+                </a>
+              </li>
+              <li class="site-header__item">
+                <a href="/#testimonials" class="site-header__link ">
+                  Testimonials
+                </a>
+              </li>
+              <li class="site-header__item">
+                <a href="/#donates" class="site-header__link ">
+                  Donates
+                </a>
+              </li>
+              <li class="site-header__item">
+                <a href="/#FaQs" class="site-header__link ">
+                  FaQs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="site-header__control nav-icon">
+            <div></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="container mb-48">
+        <h1>
+          Terms & Conditions
+        </h1>
+
+        <p>
+          By downloading or using the app, these terms will automatically apply to you – you should make sure therefore
+          that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of
+          the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app,
+          and
+          you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself,
+          and all the trade marks, copyright, database rights and other intellectual property rights related to it,
+          still
+          belong to TMWorld.
+        </p>
+        <p>
+          TMWorld is committed to ensuring that the app is as useful and efficient as possible. For that reason, we
+          reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We
+          will never charge you for the app or its services without making it very clear to you exactly what you’re
+          paying
+          for.
+        </p>
+
+        <p>
+          The TMWorld app stores and processes personal data that you have provided to us, in order to provide our
+          Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that
+          you do not jailbreak or root your phone, which is the process of removing software restrictions and
+          limitations
+          imposed by the official operating system of your device. It could make your phone vulnerable to
+          malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the
+          TMWorld
+          app won’t work properly or at all.
+        </p>
+        <p>
+          You should be aware that there are certain things that TMWorld will not take responsibility for. Certain
+          functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi,
+          or
+          provided by your mobile network provider, but TMWorld cannot take responsibility for the app not working at
+          full
+          functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+        </p>
+        <p>
+          If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement
+          with
+          your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the
+          cost of data for the duration of the connection while accessing the app, or other third party charges. In
+          using
+          the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the
+          app
+          outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the
+          bill payer for the device on which you’re using the app, please be aware that we assume that you have received
+          permission from the bill payer for using the app.
+        </p>
+        <p>
+          Along the same lines, TMWorld cannot always take responsibility for the way you use the app i.e. You need to
+          make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the
+          Service, TMWorld cannot accept responsibility.
+        </p>
+        <p>
+          With respect to TMWorld’s responsibility for your use of the app, when you’re using the app, it’s important to
+          bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on
+          third parties to provide information to us so that we can make it available to you. TMWorld accepts no
+          liability
+          for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the
+          app.
+        </p>
+        <p>
+          At some point, we may wish to update the app. The app is currently available on Android & iOS – the
+          requirements
+          for both systems (and for any additional systems we decide to extend the availability of the app to) may
+          change,
+          and you’ll need to download the updates if you want to keep using the app. TMWorld does not promise that it
+          will
+          always update the app so that it is relevant to you and/or works with the Android & iOS version that you have
+          installed on your device. However, you promise to always accept updates to the application when offered to
+          you,
+          We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of
+          termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to
+          you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+        </p>
+        <p>
+          Changes to This Terms and Conditions
+
+          We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
+          periodically
+          for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. These
+          changes are effective immediately after they are posted on this page.
+        </p>
+        <p>
+          Contact Us
+
+          If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at
+          tmworldapp@gmail.com.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer-inner">
+          <div class="brand footer-brand">
+
+          </div>
+          <ul class="footer-links list-reset">
+
+            <li>
+              <a href="/#clients" class=" ">
+                Joins
+              </a>
+            </li>
+            <li>
+              <a href="/#features" class=" ">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="/#testimonials" class=" ">
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a href="/#donates" class=" ">
+                Donates
+              </a>
+            </li>
+            <li>
+              <a href="/#FaQs" class=" ">
+                FaQs
+              </a>
+            </li>
+          </ul>
+          <ul class="footer-social-links list-reset">
+            <li>
+              <a href="#">
+                <span class="screen-reader-text">Facebook</span>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                    fill="#FFF" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/tmworldapp">
+                <span class="screen-reader-text">Twitter</span>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z"
+                    fill="#FFF" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/tmworldapp/">
+                <span class="screen-reader-text">Google</span>
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path fill="#FFF"
+                    d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48    h192c61.76,0,112,50.24,112,112V352z" />
+                  <path fill="#FFF"
+                    d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336    c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                  <circle fill="#FFF" cx="393.6" cy="118.4" r="17.056" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-copyright">&copy; 2019 TMWorld, all rights reserved</div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AauO10mjkY-TLrAw0jfFJ53Pow8Zr530W-wNv5k493YBgRW5ox7luzaCOD6-1mzE7Ja0AadJ9E5CvL6Y&disable-funding=credit,card&currency=USD">
+  </script>
+
+  <script>
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 10,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-10');
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 25,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-25');
+
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 50,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-50');
+
+    paypal
+      .Buttons({
+        style: {
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'rect',
+          label: 'paypal',
+        },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            intent: 'CAPTURE',
+            purchase_units: [{
+              amount: {
+                value: 100,
+              },
+            }, ],
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function (details) {
+            // Show a success message to your buyer
+            window.ReactNativeWebView.postMessage(
+              'Order ID: ' +
+              data.orderID +
+              ' completed by ' +
+              details.payer.name.given_name,
+            );
+          });
+        },
+      })
+      .render('.paypal-100');
+
+  </script>
+  <script src="dist/js/main.min.js"></script>
+</body>
+
+</html>
